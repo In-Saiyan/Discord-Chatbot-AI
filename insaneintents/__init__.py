@@ -1,0 +1,1 @@
+from insaneintents.main import GenericAssistant
