@@ -8,7 +8,7 @@ dotenv.load_dotenv()
 token = os.getenv("TOKEN")
 channel = int(os.getenv("CHANNELID"))
 client = discord.Client()
-call.start(train=False)
+call.start()
 
 @client.event
 async def on_ready():
