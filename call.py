@@ -5,7 +5,7 @@ dotenv.load_dotenv()
 
 modname = os.getenv("MODELNAME")
 
-assistant = GenericAssistant('intents/intents.json', model_name='aina')
+assistant = GenericAssistant('intents/intents.json', model_name=modname)
 def start(train=True):
     if train:
         assistant.train_model()
